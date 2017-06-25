@@ -79,7 +79,7 @@ namespace Game1
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            spriteBatch.Draw(blockpic, new Rectangle(0, 0, 100, 148), Color.White);
+            spriteBatch.Draw(blockpic, new Rectangle(0, 0, 32, 32), Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);

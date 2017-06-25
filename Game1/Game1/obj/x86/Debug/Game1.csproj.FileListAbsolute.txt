@@ -21,3 +21,4 @@ C:\Users\AliMu\Documents\Hogeschool Rotterdam\Periode 4\Project\project4-mobilea
 C:\Users\AliMu\Documents\Hogeschool Rotterdam\Periode 4\Project\project4-mobileapp\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\AliMu\Documents\Hogeschool Rotterdam\Periode 4\Project\project4-mobileapp\Game1\Game1\obj\x86\Debug\Game1.exe
 C:\Users\AliMu\Documents\Hogeschool Rotterdam\Periode 4\Project\project4-mobileapp\Game1\Game1\obj\x86\Debug\Game1.pdb
+C:\Users\AliMu\Documents\Hogeschool Rotterdam\Periode 4\Project\project4-mobileapp\Game1\Game1\bin\Windows\x86\Debug\Content\blockpic.xnb
