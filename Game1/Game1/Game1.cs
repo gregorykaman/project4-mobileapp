@@ -11,6 +11,7 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Texture2D spriteblock1;
 
         public Game1()
         {
@@ -41,6 +42,7 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            spriteblock1 = Content.Load<Texture2D>("blockpic");
         }
 
         /// <summary>
@@ -76,6 +78,9 @@ namespace Game1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            spriteBatch.Draw(spriteblock1, new Rectangle(0, 0, 100, 148), Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
