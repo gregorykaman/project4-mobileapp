@@ -11,17 +11,17 @@ namespace Game1
 {
     public class Grid
     {
-        int size = 32;
+        int BlockSize = 32;
+        int BoardWidth = 12;
+        int BoardHeight = 22;
 
         public void Draw(SpriteBatch spriteBatch, Texture2D block)
         {
             int pos_y = 0;
-            int y = 22;
-            for (int i = 0; i < y; i++)
+            for (int i = 0; i < BoardHeight; i++)
             {
                 int pos_x = 300-192;
-                int x = 12;
-                for (int ii = 0; ii < x; ii++)
+                for (int ii = 0; ii < BoardWidth; ii++)
                 {
                     if (i == 0 || i == 21 || ii == 0 || ii == 11)
                     {
@@ -31,9 +31,9 @@ namespace Game1
                     {
                         //spriteBatch.Draw(block, new Vector2(pos_x, pos_y), Color.White);
                     }
-                    pos_x += size;
+                    pos_x += BlockSize;
                 }
-                pos_y += size;
+                pos_y += BlockSize;
             }
         }
     }
