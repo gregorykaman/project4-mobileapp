@@ -11,12 +11,16 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D blockpic;
+        Texture2D block;
+        Grid grid = new Grid();
+
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 600;
+            graphics.PreferredBackBufferHeight = 704;
         }
 
         /// <summary>
@@ -28,7 +32,6 @@ namespace Game1
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -42,7 +45,7 @@ namespace Game1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            blockpic = Content.Load<Texture2D>("blockpic");
+            block = Content.Load<Texture2D>("Block");
         }
 
         /// <summary>
@@ -52,6 +55,7 @@ namespace Game1
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+            block.Dispose();
         }
 
         /// <summary>
@@ -79,7 +83,9 @@ namespace Game1
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            spriteBatch.Draw(blockpic, new Rectangle(0, 0, 32, 32), Color.White);
+
+            grid.Draw(spriteBatch, block);
+
             spriteBatch.End();
 
             base.Draw(gameTime);
